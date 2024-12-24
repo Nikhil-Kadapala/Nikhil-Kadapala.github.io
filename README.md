@@ -14,3 +14,11 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+<!Doctype HTML>
+<html/>
+<head/>
+Hi, I'm Nikhil. A CS Grad student at the University of New Hampshire.
+Full portfolio coming soon.
+</head>
+</html>
