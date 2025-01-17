@@ -7,6 +7,7 @@ import {
 
 import pythonLogo from "../assets/python.svg";
 import javaLogo from "../assets/java.svg";
+import clogo from "../assets/c.svg";
 import cppLogo from "../assets/c++.svg";
 import sqlLogo from "../assets/sql.svg";
 import jsLogo from "../assets/javascript.svg";
@@ -138,6 +139,7 @@ export const PROJECTS = [
 export const SKILLS = [
   { src: pythonLogo, name: "Python"},
   { src: javaLogo, name: "Java" },
+  { src: clogo, name: "C" },
   { src: cppLogo, name: "C++" },
   { src: sqlLogo, name: "SQL" },
   { src: jsLogo, name: "JavaScript" },
