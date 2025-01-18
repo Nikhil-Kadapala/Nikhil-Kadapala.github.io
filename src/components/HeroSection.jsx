@@ -1,4 +1,4 @@
-import profilePic from "../assets/profile-pictures/prof.svg";
+import profilePic from "../assets/profile-pictures/home.png";
 import { PROFILE } from "../constants";
 import { motion } from "framer-motion";
 
@@ -6,11 +6,12 @@ const HeroSection = () => {
   return (
     <>
       <div
-        className="relative flex min-h-screen items-end justify-center "
+        className="mb-24 relative flex min-h-screen items-end justify-center 
+        bg-gradient-to-t from-blue-900 via-blue-700 to-blue-500"
         id="hero"
       >
         <motion.img
-          src={profilePic}
+        src={profilePic}
           alt={PROFILE.name}
           className="absolute inset-0 z-10 h-full w-full object-cover"
           initial={{ opacity: 0 }}
@@ -18,7 +19,7 @@ const HeroSection = () => {
           transition={{ duration: 1 }}
         />
         <motion.div
-          className="absolute inset-0 z-10 bg-gradient-to-b from-transparent from-60% to-black lg:from-30%"
+          className="absolute inset-0 z-10  lg:from-30%"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}

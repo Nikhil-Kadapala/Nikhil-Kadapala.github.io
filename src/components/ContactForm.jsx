@@ -1,4 +1,3 @@
-"use client";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Toaster, toast } from "react-hot-toast";
@@ -70,16 +69,26 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="mx-auto max-w-3xl p-4 border border-gray-700 rounded-lg shadow-lg bg-gradient-to-t from-blue-900 via-blue-700 to-blue-500" id="contact">
+    <div className="mx-auto max-w-3xl p-4 border-gray-900 rounded-xl shadow-lg 
+      bg-gradient-to-t from-blue-900 via-blue-700 to-blue-500" 
+      id="contact"
+    >
       <Toaster />
-      <h2 className="my-8 text-white text-center text-4xl font-semibold tracking-tighter">
+      <motion.h2 
+        className="my-8 text-white text-center text-4xl font-semibold tracking-tighter"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8, delay: 0.5 }}
+        viewport={{root: ContactForm}}
+      >
         Let`s Connect
-      </h2>
+      </motion.h2>
       <motion.form
         onSubmit={handleSubmit}
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 0.5 }}
+        transition={{ duration: 0.8, delay: 0.8 }}
+        viewport={{root: ContactForm}}
       >
         <div className="mb-4 ">
           <input
@@ -89,11 +98,12 @@ const ContactForm = () => {
             value={formData.name}
             placeholder="Name"
             onChange={handleChange}
-            className="mb-8 w-full appearance-none rounded-lg border border-gray-900 bg-gray-200 px-3 py-2 text-base text-black focus:border-gray-400 focus:outline-none"
+            className="mb-8 w-full appearance-none rounded-lg border-gray-900 
+            bg-gray-200 px-3 py-2 text-base text-black focus:border-gray-400 focus:outline-none"
           />
           {errors.name && (
             <motion.p
-              className="text-sm text-black"
+              className="text-sm text-black font-semibold"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               aria-live="polite"
@@ -110,11 +120,12 @@ const ContactForm = () => {
             placeholder="Email"
             value={formData.email}
             onChange={handleChange}
-            className="mb-8 w-full appearance-none rounded-lg border border-gray-900 bg-gray-200 px-3 py-2 text-base text-black focus:border-gray-400 focus:outline-none"
+            className="mb-8 w-full appearance-none rounded-lg border border-gray-900 
+            bg-gray-200 px-3 py-2 text-base text-black focus:border-gray-400 focus:outline-none"
           />
           {errors.email && (
             <motion.p
-              className="text-sm text-black"
+              className="text-sm text-black font-semibold"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               aria-live="polite"
@@ -130,12 +141,13 @@ const ContactForm = () => {
             placeholder="Message"
             value={formData.message}
             onChange={handleChange}
-            className="mb-8 w-full appearance-none rounded-lg border border-gray-900 bg-gray-200 px-3 py-2 text-base text-black focus:border-gray-400 focus:outline-none"
+            className="mb-8 w-full appearance-none rounded-lg border border-gray-900 
+            bg-gray-200 px-3 py-2 text-base text-black focus:border-gray-400 focus:outline-none"
             rows="4"
           />
           {errors.message && (
             <motion.p
-              className="text-sm text-black"
+              className="text-sm text-black font-semibold"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               aria-live="polite"
@@ -146,7 +158,11 @@ const ContactForm = () => {
         </div>
         <button
           type="submit"
-          className={`mb-8 w-full rounded bg-white px-4 py-2 text-sm font-semibold text-gray-900 hover:bg-light-button border-white ${
+          className={`mb-6 w-full rounded-lg bg-gray-200 px-4 py-2 
+            text-sm font-semibold text-gray-900 
+            hover:bg-gradient-to-t from-blue-500 via-blue-700 to-blue-500 
+            border-gray-900
+            ${
             isSending ? "cursor-not-allowed opacity-50" : ""
           }`}
           disabled={isSending}

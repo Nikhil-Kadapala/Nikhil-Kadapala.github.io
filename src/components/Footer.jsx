@@ -4,16 +4,16 @@ import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
-    <div className="mb-8 mt-20">
+    <div className="mb-8 mt-14">
       {/* Logo Section */}
       <div className="flex items-center justify-center">
         <motion.figure
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 1.5, delay: 0.5 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <img src={logo} width={200} className="mb-2" alt="Company Logo" />
-          <div className="mb-10 h-3 w-12" />
+          <img src={logo} width={240} className="mb-1" alt="Company Logo" />
+          <div className="mb-2 h-1 w-12" />
         </motion.figure>
       </div>
 
@@ -27,8 +27,9 @@ const Footer = () => {
             rel="noopener noreferrer"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.2, delay: 0.5 * index }}
-            className="hover:scale-105 transition-transform duration-200"
+            transition={{ duration: 0.5, delay: 0.1 * index, ease: "easeInOut" }}
+            className="hover:scale-150 transition-transform duration-200"
+            viewport={{root: Footer}}
           >
             {link.icon}
           </motion.a>
@@ -36,8 +37,9 @@ const Footer = () => {
       </div>
 
       {/* Footer Text */}
-      <p className="mt-8 text-center text-sm tracking-wide text-gray-400">
-        &copy;compileTab. All rights reserved.
+      <p className="mt-6 text-center text-sm tracking-wide text-gray-400">
+        This page is built using the template from CompileTab. Check out compiletab 
+        <a href="https://youtube.com/playlist?list=PL--9kYHPT4ThqiF2mrcKKTYzQo5qk6Pv-&si=r5nL38XVRRPMV83h" target="/"> here </a>
       </p>
     </div>
   );

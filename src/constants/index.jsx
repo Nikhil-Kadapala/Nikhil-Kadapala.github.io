@@ -3,6 +3,7 @@ import {
   FaGithub,
   FaLinkedin,
   FaDiscord,
+  FaFilePdf,
 } from "react-icons/fa6";
 
 import pythonLogo from "../assets/python.svg";
@@ -42,6 +43,8 @@ import cert3 from "../assets/hackerrank.png";
 import cert4 from "../assets/pagerduty.png";
 import cert5 from "../assets/atlassian.png";
 
+import pdfLogo from "../assets/pdfFile.svg";
+
 // Updated NAVIGATION_LINKS to remove Education
 export const NAVIGATION_LINKS = [
   { label: "About", href: "#about" },
@@ -49,6 +52,7 @@ export const NAVIGATION_LINKS = [
   { label: "Skills", href: "#skills" },
   { label: "Certifications", href: "#certifications" },
   { label: "Contact", href: "#contact" },
+  { label: "Resume", href: "#resume" },
 ];
 
 export const PROFILE = {
@@ -228,5 +232,13 @@ export const SOCIAL_MEDIA_LINKS = [
   {
     href: "https://support.discord.com/hc/en-us/profiles/26385898744087",
     icon: <FaDiscord fontSize={25} className="hover:opacity-80" />,
+  },
+];
+
+export const RESUME = [
+  {
+    path : "/Resume.pdf",
+    text: "Click to see Resume",
+    icon: pdfLogo,
   },
 ];

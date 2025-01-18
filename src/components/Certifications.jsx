@@ -17,12 +17,16 @@ const containerVariants = {
 
 const itemVariants = {
   hidden: { opacity: 0, x: -20 },
-  visible: { opacity: 1, x: 0, transition: { duration: 0.5 } },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.8 } },
 };
 
 const Certifications = () => {
   return (
-    <section id="certifications" className="certifications-section mb-20 max-w-screen-2xl mx-auto p-4 border-gray-900 rounded-xl px-2 py-10 lg:px-28 shadow-lg bg-gradient-to-t from-blue-900 via-blue-700 to-blue-500">
+    <section id="certifications" 
+      className="certifications-section mb-20 max-w-screen-2xl mx-auto p-4 
+      border-gray-900 rounded-xl px-2 py-10 lg:px-28 shadow-lg 
+      bg-gradient-to-t from-blue-900 via-blue-700 to-blue-500"
+    >
       <motion.h2
         className="certifications-title mb-14 text-center text-4xl font-semibold"
         initial="hidden"
@@ -44,10 +48,13 @@ const Certifications = () => {
             key={index}
             className="cert-item mb-8 flex items-center"
             variants={itemVariants}
+            viewport={{ root: Certifications }}
           >
             <a href={cert.link} target="_blank" rel="noopener noreferrer" className="mr-4"> {/* Make the logo clickable */}
               <motion.div
                 whileHover={{ scale: 1.2, transition: { duration: 0.3 } }}
+                variants={containerVariants}
+                viewport={{ root: Certifications }}
               >
                 <img
                   src={cert.icon}

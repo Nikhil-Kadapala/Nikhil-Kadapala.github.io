@@ -10,7 +10,8 @@ const containerVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 1.5,
+      duration: 0.8,
+      delay: 0.5,
       staggerChildren: 0.4,
     },
   },
@@ -19,7 +20,7 @@ const containerVariants = {
 // Item variants for animation (applied on each project card)
 const itemVariants = {
   hidden: { opacity: 0, scale: 0.8 },
-  visible: { opacity: 1, scale: 1, transition: { duration: 1.5 } },
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.8, delay: 0.5 } },
 };
 
 // Hover effect for floating and highlighting
@@ -49,14 +50,14 @@ const Projects = () => {
         initial="hidden"
         whileInView="visible"
         variants={containerVariants}
-        viewport={{ once: true }}
+        viewport={{ root: Projects }}
       >
         {PROJECTS.map((project, index) => (
           <motion.div
             key={index}
             variants={itemVariants}
             whileHover={hoverEffect} // Apply hover effect here
-            className="bg-blue-600 m-4 rounded-lg shadow-lg border-gray-900"
+            className="bg-gradient-to-t from-blue-900 via-blue-700 to-blue-500 m-4 rounded-lg shadow-lg border-gray-900"
           >
             <Card
               image={project.image}

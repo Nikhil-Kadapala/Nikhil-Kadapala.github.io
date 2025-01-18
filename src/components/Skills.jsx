@@ -38,16 +38,19 @@ function split2rows(array, chunkSize) {
 
 const Skills = () => {
   return (
-    <div className="container mb-20 mx-auto rounded-xl bg-gradient-to-t from-blue-900 via-blue-700 to-blue-500" id="skills">
-      <motion.h2 className="mb-10 mt-24 text-center text-4xl font-semibold"
+    <div className="container mb-20 mx-auto rounded-xl shadow-lg
+      bg-gradient-to-t from-blue-900 via-blue-700 to-blue-500
+      border-gray-900" 
+      id="skills">
+      <motion.h1 className="mb-10 mt-24 text-center text-4xl font-semibold"
       initial="hidden"
       whileInView="visible"
       variants={containerVariants}
       viewport={{root:Skills}}
       >
-        <h1 className="text-blue-500">" "</h1>
+        <div className="text-blue-500">" "</div>
         Skills
-      </motion.h2>
+      </motion.h1>
       <motion.div
         className="mx-2 flex flex-col rounded-xl px-4 py-10 lg:px-20"
         initial="hidden"

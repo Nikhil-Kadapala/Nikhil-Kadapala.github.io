@@ -3,7 +3,11 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="mb-24 max-w-screen-2xl bg-gradient-to-b from-blue-900 via-blue-700 to-blue-500 border-gray-900" id="about">
+    <div className="mb-24 mx-auto max-w-screen-3xl
+        bg-blue-900
+        border-gray-900" 
+        id="about"
+    >
       <motion.h2
         className="mt-10 text-2xl font-semibold"
         initial={{ opacity: 0, y: -20 }}
