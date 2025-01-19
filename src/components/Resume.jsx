@@ -20,6 +20,7 @@ const Resume = () => {
             rounded-xl shadow-lg px-4 py-4
             bg-gradient-to-t from-blue-900 via-blue-700 to-blue-500
             border-gray-900 text-xl font-mono"
+            id="resume"
             initial="hidden"
             whileInView="visible"
             transition={{ duration: 1, delay: 0.5 }}
@@ -34,7 +35,13 @@ const Resume = () => {
                     rel="noopener noreferrer"
                     className="items-center mt-2"
                 >
-                    <img src={item.icon} width={180}></img>
+                    <motion.img 
+                        src={item.icon} 
+                        width={180}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 1 }}>
+                    </motion.img>
                     <div>
                         <div className="text-blue-800">" "</div>
                         <h2>{item.text}</h2>

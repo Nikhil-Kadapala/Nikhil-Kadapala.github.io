@@ -1,5 +1,5 @@
 import React from "react";
-import { CERTIFICATIONS } from "../constants"; // Import the certifications from constants.js
+import { CERTIFICATIONS } from "../constants";
 import { motion } from "framer-motion";
 
 // Animation settings

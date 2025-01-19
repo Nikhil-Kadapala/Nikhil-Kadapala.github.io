@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from "../assets/Nikhil3.svg";
+import logo from "../assets/profile-pictures/logo.gif";
 import { NAVIGATION_LINKS } from "../constants";
 import { FaBars, FaTimes } from "react-icons/fa";
 
@@ -30,7 +30,7 @@ const Navbar = () => {
     <div>
       <nav className="fixed left-0 right-0 top-4 z-50">
         {/* Desktop Menu */}
-        <div className="mx-auto hidden max-w-3xl items-center justify-center rounded-lg bg-blue-950/20 py-3 backdrop-blur-lg lg:flex">
+        <div className="mx-auto hidden max-w-3xl items-center justify-center rounded-xl bg-blue-950/20 py-3 backdrop-blur-lg lg:flex">
           <div className="flex justify-between gap-6">
             <div>
               <a href="#">
@@ -42,7 +42,7 @@ const Navbar = () => {
                 {NAVIGATION_LINKS.map((item, index) => (
                   <li key={index}>
                     <a
-                      className="text-sm hover:text-yellow-400"
+                      className="text-md hover:text-red-800"
                       href={item.href}
                       onClick={(e) => handleLinkClick(e, item.href)}
                     >

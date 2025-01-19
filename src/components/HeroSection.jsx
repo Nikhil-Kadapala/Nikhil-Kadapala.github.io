@@ -1,4 +1,4 @@
-import profilePic from "../assets/profile-pictures/home.png";
+import profilePic from "../assets/profile-pictures/hero.svg";
 import { PROFILE } from "../constants";
 import { motion } from "framer-motion";
 
@@ -6,29 +6,33 @@ const HeroSection = () => {
   return (
     <>
       <div
-        className="mb-24 relative flex min-h-screen items-end justify-center 
-        bg-gradient-to-t from-blue-900 via-blue-700 to-blue-500"
+        className="mt-9 relative flex min-h-screen items-center justify-between px-20
+        bg-gradient-to-b from-blue-900 via-blue-700 to-blue-500"
         id="hero"
       >
         <motion.img
-        src={profilePic}
+          src={profilePic}
           alt={PROFILE.name}
-          className="absolute inset-0 z-10 h-full w-full object-cover"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
+          className="relative left-0 z-10 h-auto w-1/2 object-cover rounded-3xl shadow-2xl 
+          bg-white/5 border-gray-900 backdrop-blur-sm p-4 ml-10"
+          initial={{ opacity: 0, y:50 }}
+          animate={{ opacity: 1, y:0 }}
+          transition={{ duration: 1 , delay: 0.5, ease: "easeInOut"}}
+          viewport={{ root: HeroSection }}
         />
         <motion.div
           className="absolute inset-0 z-10  lg:from-30%"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
+          viewport={{ root: HeroSection }}
         />
         <motion.div
-          className="z-20 mx-4 max-w-3xl pb-20"
+          className="z-20 mx-4 max-w-3xl pb-20 pr-40"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1 }}
+          viewport={{ root: HeroSection }}
         >
           <h1 className="text-5xl font-semibold uppercase tracking-wide md:text-7xl">
             {PROFILE.name}

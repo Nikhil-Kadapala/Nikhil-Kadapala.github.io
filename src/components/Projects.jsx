@@ -35,9 +35,9 @@ const hoverEffect = {
 
 const Projects = () => {
   return (
-    <div id="projects" className="mx-auto max-w-screen-2xl rounded-xl shadow-lg p-1 bg-gradient-to-t from-blue-900 via-blue-700 to-blue-500">
+    <div id="projects" className="mx-auto max-w-screen-2xl p-1">
       <motion.h2
-        className="mt-16 text-center text-5xl font-semibold"
+        className="mt-14 text-center text-5xl font-semibold"
         initial="hidden"
         whileInView="visible"
         variants={containerVariants}
@@ -46,7 +46,7 @@ const Projects = () => {
         Projects
       </motion.h2>
       <motion.div
-        className="mt-14 flex flex-wrap justify-center py-8"
+        className="flex flex-wrap justify-center py-8"
         initial="hidden"
         whileInView="visible"
         variants={containerVariants}

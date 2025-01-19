@@ -14,6 +14,8 @@ export default {
       'green' : colors.green,
       'blue' : colors.blue,
       'red' : colors.red,
+      'yellow' : colors.yellow,
+      'slate' : colors.slate,
       'pink-gradient' : '#4E4C8B',
       'alpha' : {
         100: '#091066',

@@ -39,7 +39,7 @@ const Footer = () => {
       {/* Footer Text */}
       <p className="mt-6 text-center text-sm tracking-wide text-gray-400">
         This page is built using the template from CompileTab. Check out compiletab 
-        <a href="https://youtube.com/playlist?list=PL--9kYHPT4ThqiF2mrcKKTYzQo5qk6Pv-&si=r5nL38XVRRPMV83h" target="/"> here </a>
+        <a href="https://youtu.be/-TJ03nvX99c?si=0034tn23h283T35B" target="/"> here </a>
       </p>
     </div>
   );
