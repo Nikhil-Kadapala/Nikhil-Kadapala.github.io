@@ -52,7 +52,7 @@ const Skills = () => {
         Skills
       </motion.h1>
       <motion.div
-        className="mx-2 flex flex-col rounded-xl px-4 py-10 lg:px-20"
+        className="mx-auto flex flex-col rounded-xl px-4 py-10 lg:px-20"
         initial="hidden"
         whileInView="visible"
         variants={containerVariants}

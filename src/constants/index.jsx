@@ -66,12 +66,15 @@ export const PROFILE = {
   ],
 };
 
-
-
 export const ABOUT = {
   text1:
-    "I am interested in working on non-convetional applications using popular technologies and innovations!",
-  text2: "Hello! I'm Nikhil Kadapala, and I love learning new things and build useful tools.",
+    "Hello! I'm Nikhil👋",
+  text2: [
+    "I'm always on the lookout for roles that push me out of my comfort zone, something that keeps me excited to wake up and dive in every day. I love learning new things, figuring out how they work, and then using that knowledge to create something unique and meaningful.", 
+    "For me, it’s all about solving interesting problems and building applications that feel innovative and impactful. If it’s challenging and gives me room to grow, I’m all in.", 
+    "I'll admit it—I'm not the 'grind LeetCode all day' kind of person. But what I bring to the table is a strong focus on top-down analysis and a first-principles approach to problem-solving. I love breaking down complex challenges into actionable steps and collaborating with my team to ship clean, working code. Oh, and yes—I know my way around GitHub and can definitely merge that PR 😊.",
+    "PS: I learned React.js, Java script, HTML, and CSS to build this website over the winter break ❄️ 🔍📖💻 🏋️‍♂️",
+  ],
 };
 
 // Projects section remains unchanged

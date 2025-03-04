@@ -81,13 +81,13 @@ const ContactForm = () => {
         transition={{ duration: 0.8, delay: 0.5 }}
         viewport={{root: ContactForm}}
       >
-        Let`s Connect
+        {"Let's Connect"}
       </motion.h2>
       <motion.form
         onSubmit={handleSubmit}
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.8, delay: 0.8 }}
+        transition={{ duration: 0.3, delay: 0.3 }}
         viewport={{root: ContactForm}}
       >
         <div className="mb-4 ">

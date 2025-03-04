@@ -9,7 +9,7 @@ const containerVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 1.5,
+      duration: 0.5,
       staggerChildren: 0.5,
     },
   },
@@ -17,7 +17,7 @@ const containerVariants = {
 
 const itemVariants = {
   hidden: { opacity: 0, x: -20 },
-  visible: { opacity: 1, x: 0, transition: { duration: 0.8 } },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.5 } },
 };
 
 const Certifications = () => {
@@ -41,7 +41,7 @@ const Certifications = () => {
         initial="hidden"
         whileInView="visible"
         variants={containerVariants}
-        viewport={{ root: Certifications }}
+        viewport={{ once: true }}
       >
         {CERTIFICATIONS.map((cert, index) => (
           <motion.div 
