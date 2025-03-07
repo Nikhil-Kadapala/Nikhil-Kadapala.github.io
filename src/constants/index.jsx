@@ -240,7 +240,7 @@ export const SOCIAL_MEDIA_LINKS = [
 
 export const RESUME = [
   {
-    path : "/Resume.pdf",
+    path : "Resume.pdf",
     text: "Click to see Resume",
     icon: pdfLogo,
   },

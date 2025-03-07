@@ -22,10 +22,11 @@ const itemVariants = {
 
 const Certifications = () => {
   return (
-    <section id="certifications" 
-      className="certifications-section mb-20 max-w-screen-2xl mx-auto p-4 
-      border-gray-900 rounded-xl px-2 py-10 lg:px-28 shadow-lg 
-      bg-gradient-to-t from-blue-900 via-blue-700 to-blue-500"
+    <div 
+      className="container mx-auto mb-20 rounded-xl shadow-lg  p-4  px-2 py-10 lg:px-28  
+      bg-gradient-to-t from-blue-900 via-blue-700 to-blue-500 
+      border-gray-900"
+      id="certifications"
     >
       <motion.h2
         className="certifications-title mb-14 text-center text-4xl font-semibold"
@@ -73,7 +74,7 @@ const Certifications = () => {
           </motion.div>
         ))}
       </motion.div>
-    </section>
+    </div>
   );
 };
 
