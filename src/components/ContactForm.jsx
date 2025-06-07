@@ -70,7 +70,7 @@ const ContactForm = () => {
 
   return (
     <div className="mx-auto max-w-3xl p-4 border-gray-900 rounded-xl shadow-lg 
-      bg-gradient-to-t from-blue-900 via-blue-700 to-blue-500" 
+      bg-gradient-to-t from-blue-900 via-blue-700 to-blue-700" 
       id="contact"
     >
       <Toaster />
