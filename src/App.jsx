@@ -5,8 +5,8 @@ import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 import Skills from "./components/Skills";
 import About from "./components/About";
-import Certifications from "./components/Certifications";
 import Resume from "./components/Resume";
+import Experience from "./components/Experience";
 
 const App = () => {
   return (
@@ -16,7 +16,7 @@ const App = () => {
         <About />
         <Projects />
         <Skills />
-        <Certifications />
+        <Experience />
         <ContactForm />
         <Resume />
         <Footer />
