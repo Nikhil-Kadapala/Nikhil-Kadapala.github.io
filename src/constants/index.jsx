@@ -49,7 +49,7 @@ export const PROFILE = {
     </span>
   ),
   info: [
-    "AI & ML Enthusiast | Expertise in Python Programming, DSA, Machine Learning .",
+    "AI & ML Enthusiast | Expertise in Python Programming, PyTorch, LLMs training and fine-tuning, RAG.",
   ],
 };
 
