@@ -1,7 +1,6 @@
 import { PROJECTS } from "../constants";
 import Card from "./Card";
 import { motion } from "framer-motion";
-import Skills from "./Skills";
 
 // Container variants for animation
 const containerVariants = {
@@ -46,7 +45,7 @@ const Projects = () => {
         Projects
       </motion.h2>
       <motion.div
-        className="flex flex-wrap justify-center py-8"
+        className="flex flex-wrap justify-center text-pretty py-8"
         initial="hidden"
         whileInView="visible"
         variants={containerVariants}
@@ -54,7 +53,7 @@ const Projects = () => {
       >
         {PROJECTS.map((project, index) => (
           <motion.div
-            key={index}
+            key={project.title}
             variants={itemVariants}
             whileHover={hoverEffect} // Apply hover effect here
             className="bg-gradient-to-t from-blue-900 via-blue-700 to-blue-500 m-4 rounded-lg shadow-lg border-gray-900"
@@ -63,7 +62,8 @@ const Projects = () => {
               image={project.image}
               title={project.title}
               subtitle={project.subtitle}
-              link={project.link}  // Use dynamic link here
+              githubLink={project.githubLink}
+              demoLink={project.demoLink}
               className="text-black text-5xl font-semibold"
             />
           </motion.div>
