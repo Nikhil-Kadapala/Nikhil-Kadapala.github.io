@@ -38,7 +38,7 @@ function split2rows(array, chunkSize) {
 
 const Skills = () => {
   return (
-    <div className="container mb-20 mx-auto rounded-xl shadow-lg
+    <div className="container mb-10 mx-auto rounded-xl shadow-lg
       bg-gradient-to-t from-blue-900 via-blue-700 to-blue-500
       border-gray-900" 
       id="skills">
