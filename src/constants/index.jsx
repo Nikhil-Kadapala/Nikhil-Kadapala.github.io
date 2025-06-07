@@ -3,7 +3,6 @@ import {
   FaGithub,
   FaLinkedin,
   FaDiscord,
-  FaFilePdf,
 } from "react-icons/fa6";
 
 import pythonLogo from "../assets/python.svg";
@@ -12,6 +11,7 @@ import clogo from "../assets/c.svg";
 import cppLogo from "../assets/c++.svg";
 import sqlLogo from "../assets/sql.svg";
 import jsLogo from "../assets/javascript.svg";
+import tsLogo from "../assets/typescript.svg";
 import reactLogo from "../assets/react.svg";
 import htmlLogo from "../assets/html.svg";
 import cssLogo from "../assets/css.svg";
@@ -27,15 +27,8 @@ import azureLogo from "../assets/azure.svg";
 import gcpLogo from "../assets/gcp.svg";
 
 import image1 from "../assets/project1.png";
-import image2 from "../assets/Project2.png";
-import image3 from "../assets/dollar.png";
-import image4 from "../assets/project4.png";
-import image5 from "../assets/project5.png";
-import image6 from "../assets/project6.png";
-import image7 from "../assets/project7.png";
-import image8 from "../assets/project8.png";
-import image9 from "../assets/project9.png";
-import image10 from "../assets/project10.png";
+import image2 from "../assets/project2.svg";
+import image3 from "../assets/project3.svg";
 
 import cert1 from "../assets/microsoft_cert.png";
 import cert2 from "../assets/google_cert.png";
@@ -50,7 +43,8 @@ export const NAVIGATION_LINKS = [
   { label: "About", href: "#about" },
   { label: "Projects", href: "#projects" },
   { label: "Skills", href: "#skills" },
-  { label: "Certifications", href: "#certifications" },
+  { label: "Experience", href: "#experience" },
+  //{ label: "Certifications", href: "#certifications" },
   { label: "Contact", href: "#contact" },
   { label: "Resume", href: "#resume" },
 ];
@@ -68,11 +62,12 @@ export const PROFILE = {
 
 export const ABOUT = {
   text1:
-    "Hello! I'm Nikhil👋",
+    "Hi! I'm Nikhil👋",
   text2: [
-    "I'm always on the lookout for roles that push me out of my comfort zone, something that keeps me excited to wake up and dive in every day. I love learning new things, figuring out how they work, and then using that knowledge to create something unique and meaningful.", 
-    "For me, it’s all about solving interesting problems and building applications that feel innovative and impactful. If it’s challenging and gives me room to grow, I’m all in.", 
-    "I'll admit it—I'm not the 'grind LeetCode all day' kind of person. But what I bring to the table is a strong focus on top-down analysis and a first-principles approach to problem-solving. I love breaking down complex challenges into actionable steps and collaborating with my team to ship clean, working code. Oh, and yes—I know my way around GitHub and can definitely merge that PR 😊.",
+    "I'm always on the lookout for oppoertunities that push me out of my comfort zone, something that keeps me excited to wake up and dive in every day. I love learning new things, figuring out how they work, and then using that knowledge to create something unique and meaningful.", 
+    "For me, it's all about solving interesting problems and building applications that feel innovative and impactful. If it's challenging and gives me room to grow, I'm all in.", 
+    "I'll admit it—I'm not the 'grind LeetCode all day' kind of person. But what I bring to the table is a strong focus on top-down analysis and a first-principles approach to problem-solving.",
+    "I love breaking down complex challenges into actionable steps and collaborating with my team to ship clean, working code. Oh, and yes, I know my way around GitHub and can definitely merge that PR 😊.",
     "PS: I learned React.js, Java script, HTML, and CSS to build this website over the winter break ❄️ 🔍📖💻 🏋️‍♂️",
   ],
 };
@@ -80,66 +75,26 @@ export const ABOUT = {
 // Projects section remains unchanged
 export const PROJECTS = [
   {
-    title: "Airbnb booking rate Prediction and Causal Inference",
-    subtitle:
-      "An XGBoost model with 82.8% AUC to predict Airbnb booking rates in LA, followed by causal inference analysis identifying key factors like guest capacity, pricing, and host response rate driving higher bookings",
+    title: "Claimifying Social Media Posts with Self-Refinement",
+    subtitle: "This project uses a combination of prompting strategies and an iterative Self-Refinement stage. In this stage, the same LLM that generates the initial claim provides feedback based on specific criteria evaluating the check-worthiness of the claim against the input text. This feedback, along with the input and initial claim, is fed back into the same LLM, which generates a refined version of the claim.",
     image: image1,
-    link: "https://github.com/mrkomire/Big-Data"
+    githubLink: "https://github.com/Nikhil-Kadapala/clef2025-checkthat-lab-task2",
+    demoLink: "https://nikhil-kadapala.github.io/clef2025-checkthat-lab-task2"
   },
   {
-    title: "Email Classification",
-    subtitle: "Executed text preprocessing and dimensionality reduction to build a spam email filter using a Random Forest model, achieving an MSE of 0.0307",
+    title: "Resume Job Description Ranking",
+    subtitle: "This project exploits the capability of LLMs towards evaluating resumes against a given job description and classify them as either good fit, partial fit, or not fit along with providing an overall score, a rationale explaining the reasons for the classification and the score, and suggestions to better tailor the resume to fit the job description including personalized recommendations to close any and all gaps in the resume.",
     image: image2,
+    githubLink: "https://github.com/Nikhil-Kadapala/Resume-Job-Description-Ranking",
+    demoLink: "https://nikhil-kadapala.github.io/Resume-Job-Description-Ranking"
   },
   {
-    title: "Stochastic Volatility Forecasting for USDINR",
-    subtitle: "A Bayesian volatility model using the 'stochvol' package in R, tuning prior distribution parameters to predict future volatility based on historical data",
+    title: "Sentiment Analysis through Human-aligned Rationalization",
+    subtitle: "A project on teaching Deep Neural Networks to Rationalize through human-annotated training data and LIME Feedback. The model is trained to think like a human when predicting sentiment. The model's internal rationalization is validated through LIME Analysis of sampled outputs and cross-verifying the highest ranking features with human-annotated data.",
     image: image3,
-    link: "https://github.com/mrkomire/Forex_USDINR",
+    githubLink: "https://github.com/Nikhil-Kadapala/Rational-NeuralNets",
+    demoLink: "https://nikhil-kadapala.github.io/Rational-NeuralNets"
   },
-  {
-    title: "Commodity Portfolio Optimization",
-    subtitle:
-      "A model using the ‘cvxpy’ solver package in Jupyter Notebook using Python and solver in Excel to optimize a commodity portfolio, achieving 117.3% expected returns with 2% risk",
-    image: image4,
-  },
-  {
-    title: "Abalone Classification",
-    image: image5,
-    link: "https://github.com/mrkomire/Abalone",
-  },
-  {
-    title: "IMDB Top 250 Movies Analysis",
-    subtitle:
-      "Leveraged BeautifulSoup, NumPy, Pandas, Matplotlib, Seaborn, and NLTK for web scraping and data analysis, identifying 150 minutes as the optimal movie duration for maximizing viewer engagement",
-    image: image6,
-  },
-  {
-    title: "Teacher Certification Insights",
-    subtitle:
-      "Applied hypothesis testing and regression analysis in R to model teacher certification data, revealing a weak negative correlation between student enrollment, staff count, and certification rates",
-    image: image7,
-  },
-  {
-    title: "TED Talks Analysis",
-    subtitle:
-      "Utilized Power Query, Power BI, R in Google Colab, and Tableau to analyze trends from 2006 to 2017, uncovering a preference for talks lasting 10-20 minutes",
-    image: image8,
-    link: "https://github.com/mrkomire/TED"
-  },
-  {
-    title: "MMA Fight Analysis",
-    subtitle:
-      "Used MySQL on Amazon RDS and Power BI to analyze MMA fight data, identifying key patterns like fighters with two consecutive wins being more likely to lose their next fight",
-    image: image9,
-  },
-  {
-    title: "CNN for image classification",
-    subtitle:
-      "Early Detection of diabetic retinopathy in diabteic patients by inputting the retinal images",
-    image: image10,
-  },
-  // More projects...
 ];
 
 // Skills section remains unchanged
@@ -147,9 +102,10 @@ export const SKILLS = [
   { src: pythonLogo, name: "Python"},
   { src: javaLogo, name: "Java" },
   { src: clogo, name: "C" },
-  { src: cppLogo, name: "C++" },
+  //{ src: cppLogo, name: "C++" },
   { src: sqlLogo, name: "SQL" },
   { src: jsLogo, name: "JavaScript" },
+  { src: tsLogo, name: "TypeScript" },
   { src: reactLogo, name: "React" },
   { src: htmlLogo, name: "HTML" },
   { src: cssLogo, name: "CSS" },
@@ -158,28 +114,27 @@ export const SKILLS = [
   { src: githubLogo, name: "GitHub" },
   { src: gitlabLogo, name: "GitLab" },
   { src: jupyterLogo, name: "Jupyter" },
-  { src: sklearn, name: "Scikit-learn" },
+  //{ src: sklearn, name: "Scikit-learn" },
   { src: pandasLogo, name: "Pandas" },
   { src: awsLogo, name: "AWS" },
-  { src: azureLogo, name: "Azure" },
-  { src: gcpLogo, name: "GCP" },
+  //{ src: azureLogo, name: "Azure" },
+  //{ src: gcpLogo, name: "GCP" },
 ];
 
 // Updated to keep only the Experience section
 export const EXPERIENCE = [
   {
-    title: "Application Development Analyst",
-    company: "Accenture",
-    duration: "2021 - 2023",
-    description:
-      "Improved energy consumption forecasting accuracy by 11% using XGBoost, optimized supply chain operations reducing transportation costs by 7%, automated 20+ processes with a 99% success rate using Blue Prism, and developed Power BI dashboards reducing operational costs by 20% for Total Energies",
+    title: " Information Technology Help Desk Technician",
+    company: "University of New Hampshire",
+    duration: "2024 - 2025",
+    description:"Provided technical support to end-users via phone, email, and in-person, resolving hardware, software, and network issues. Troubleshooted and resolved a wide range of technical problems, including operating system errors, application malfunctions, and network connectivity issues. Installed, configured, and maintained computer systems including re-imaging and end-point management. Assisted with user account management, including creating new accounts, resetting passwords, and managing user permissions. Documented all support requests and resolutions in a ticketing system. Contributed to maintaining a knowledge base of common issues and solutions."
   },
   {
-    title: "Front-End Developer Intern",
-    company: "Creative Solutions Ltd.",
+    title: "SAP Security Consultant",
+    company: "Tata Consultancy Services (TCS)",
     duration: "2021 - 2022",
     description:
-      "Worked on improving user interfaces and enhancing UX for a variety of client projects. Utilized React and Redux to build interactive components and optimize performance.",
+      "SAP Security Management: Managed user accounts, roles, and authorizations, ensuring segregation of duties compliance. Security Implementation and Monitoring: Configured and implemented security measures, monitored security incidents, and ensured compliance with regulations. User Training and Documentation: Provided training on security best practices and created documentation on security configurations and procedures.",
   },
 ];
 
