@@ -1,4 +1,3 @@
-// Import necessary assets and icons
 import {
   FaGithub,
   FaLinkedin,
@@ -8,7 +7,6 @@ import {
 import pythonLogo from "../assets/python.svg";
 import javaLogo from "../assets/java.svg";
 import clogo from "../assets/c.svg";
-import cppLogo from "../assets/c++.svg";
 import sqlLogo from "../assets/sql.svg";
 import jsLogo from "../assets/javascript.svg";
 import tsLogo from "../assets/typescript.svg";
@@ -20,11 +18,8 @@ import gitLogo from "../assets/git.svg";
 import githubLogo from "../assets/github.svg";
 import gitlabLogo from "../assets/gitlab.svg";
 import jupyterLogo from "../assets/jupyter.svg";
-import sklearn from "../assets/sklearn.svg";
 import pandasLogo from "../assets/pandas.svg";
 import awsLogo from "../assets/aws.svg";
-import azureLogo from "../assets/azure.svg";
-import gcpLogo from "../assets/gcp.svg";
 
 import image1 from "../assets/project1.png";
 import image2 from "../assets/project2.svg";
@@ -38,13 +33,11 @@ import cert5 from "../assets/atlassian.png";
 
 import pdfLogo from "../assets/pdfFile.svg";
 
-// Updated NAVIGATION_LINKS to remove Education
 export const NAVIGATION_LINKS = [
   { label: "About", href: "#about" },
   { label: "Projects", href: "#projects" },
   { label: "Skills", href: "#skills" },
   { label: "Experience", href: "#experience" },
-  //{ label: "Certifications", href: "#certifications" },
   { label: "Contact", href: "#contact" },
   { label: "Resume", href: "#resume" },
 ];
@@ -72,7 +65,6 @@ export const ABOUT = {
   ],
 };
 
-// Projects section remains unchanged
 export const PROJECTS = [
   {
     title: "Claimifying Social Media Posts with Self-Refinement",
@@ -97,12 +89,10 @@ export const PROJECTS = [
   },
 ];
 
-// Skills section remains unchanged
 export const SKILLS = [
   { src: pythonLogo, name: "Python"},
   { src: javaLogo, name: "Java" },
   { src: clogo, name: "C" },
-  //{ src: cppLogo, name: "C++" },
   { src: sqlLogo, name: "SQL" },
   { src: jsLogo, name: "JavaScript" },
   { src: tsLogo, name: "TypeScript" },
@@ -114,14 +104,10 @@ export const SKILLS = [
   { src: githubLogo, name: "GitHub" },
   { src: gitlabLogo, name: "GitLab" },
   { src: jupyterLogo, name: "Jupyter" },
-  //{ src: sklearn, name: "Scikit-learn" },
   { src: pandasLogo, name: "Pandas" },
   { src: awsLogo, name: "AWS" },
-  //{ src: azureLogo, name: "Azure" },
-  //{ src: gcpLogo, name: "GCP" },
 ];
 
-// Updated to keep only the Experience section
 export const EXPERIENCE = [
   {
     title: " Information Technology Help Desk Technician",
@@ -138,7 +124,6 @@ export const EXPERIENCE = [
   },
 ];
 
-// Updated certifications section
 export const CERTIFICATIONS = [
   {
     name: "Microsoft Data Analytics Professional",
@@ -177,7 +162,6 @@ export const CERTIFICATIONS = [
   },
 ];
 
-// Updated Social Media Links
 export const SOCIAL_MEDIA_LINKS = [
   {
     href: "https://github.com/Nikhil-Kadapala",
