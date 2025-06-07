@@ -29,7 +29,7 @@ const Resume = () => {
             viewport={{root: Resume}}>
             {RESUME.map((item, index) => (
                 <motion.a 
-                    key={index}
+                    key={item.path}
                     href={item.path}
                     target="/_blank" 
                     rel="noopener noreferrer"
@@ -48,7 +48,9 @@ const Resume = () => {
                     </div>
                 </motion.a>
             ))}
+            
         </motion.div>
+        
     );
 };
 
