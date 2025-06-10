@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from 'prop-types';
 import './Experience.css';
 import unhLogo from "../assets/unh.png";
-import tcsLogo from "../assets/TCS.png";
+import tcsLogo from "../assets/tcs.png";
 import { motion } from "framer-motion";
 
 const timelineData = [
